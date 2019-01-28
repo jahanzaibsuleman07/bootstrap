@@ -47,13 +47,14 @@ Responsive variations also exist for each `float` value.
 <div class="float-xl-left">Float left on viewports sized XL (extra-large) or wider</div><br>
 {{< /example >}}
 
-Here are all the support classes;
+Here are all the support classes:
 
 {{< markdown >}}
 {{< float.inline >}}
 {{- range $.Site.Data.breakpoints }}
 - `.float{{ .abbr }}-left`
 - `.float{{ .abbr }}-right`
-- `.float{{ .abbr }}-none`{{ end -}}
+- `.float{{ .abbr }}-none`
+{{- end -}}
 {{< /float.inline >}}
 {{< /markdown >}}
