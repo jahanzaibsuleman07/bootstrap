@@ -29,7 +29,6 @@
     @include media-breakpoint-down(md) {
       display: block;
       overflow-x: auto;
-      -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
 
       &.table-bordered {
         border: 0;
@@ -107,7 +106,6 @@
 
 .bd-title {
   margin-top: 1rem;
-  margin-bottom: .5rem;
   font-weight: 300;
   @include font-size(3rem);
 }
@@ -121,5 +119,10 @@
   }
 }
 
-.bd-text-purple { color: $bd-purple; }
-.bd-text-purple-bright { color: $bd-purple-bright; }
+.bd-text-purple {
+  color: $bd-purple;
+}
+
+.bd-text-purple-bright {
+  color: $bd-purple-bright;
+}
